@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="judul">Kalulator</h1>
+    <input class="input" id="display" type="text" placeholder="0" disabled>
+
+    <table class="table">
+        <tr class="tr">
+            <th colspan="3" class="warna" onclick="clearDisplay()">C</th>
+            <th class="warna" onclick="appendCharacter('/')">/</th>
+        </tr>
+        <tr>
+            <th onclick="appendCharacter('7')">7</th>
+            <th onclick="appendCharacter('8')">8</th>
+            <th onclick="appendCharacter('9')">9</th>
+            <th class="warna" onclick="appendCharacter('*')">*</th>
+        </tr>
+        <tr>
+            <th onclick="appendCharacter('4')">4</th>
+            <th onclick="appendCharacter('5')">5</th>
+            <th onclick="appendCharacter('6')">6</th>
+            <th class="warna" onclick="appendCharacter('-')">-</th>
+        </tr>
+        <tr>
+            <th onclick="appendCharacter('1')">1</th>
+            <th onclick="appendCharacter('2')">2</th>
+            <th onclick="appendCharacter('3')">3</th>
+            <th class="warna" onclick="appendCharacter('+')">+</th>
+        </tr>
+        <tr>
+            <th colspan="2" onclick="appendCharacter('0')">0</th>
+            <th class="warna" onclick="appendCharacter('.')">.</th>
+            <th class="warna" onclick="calculateResult()">=</th>
+        </tr>
+    </table>
+
+    <script>
+        function appendCharacter(character) {
+            const display = document.getElementById('display');
+            // If display is 0, replace it with the new character
+            if (display.value === '0') {
+                display.value = character;
+            } else {
+                display.value += character;
+            }
+        }
+
+        function clearDisplay() {
+            document.getElementById('display').value = '0';
+        }
+
+        function calculateResult() {
+            const display = document.getElementById('display');
+            try {
+                // Evaluate the mathematical expression
+                display.value = eval(display.value) || '0';
+            } catch (e) {
+                display.value = 'Error';
+            }
+        }
+    </script>
+</body>
+</html>

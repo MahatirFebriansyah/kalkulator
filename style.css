@@ -1,0 +1,106 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(20, 20, 20);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.judul {
+    margin-top: 40px;
+    text-align: center;
+    color: orange;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.input {
+    margin-top: 60px;
+    width: 50%;
+    height: 3rem;
+    border-radius: 10px;
+    font-size: 30px;
+    background-color: rgb(40, 41, 43);
+    color: white;
+    cursor: pointer;
+
+}
+
+.table{
+    margin-top: 20px;
+    width: 50%;
+    height: 400px;
+    font-size: 30px;
+    border-collapse: separate; /* Pastikan border-spacing berfungsi */
+    border-spacing: 15px;
+    cursor: pointer;
+}
+
+th {
+    height: 3rem;
+    border-radius: 10px;
+    margin: 20px;
+    background-color: rgb(40, 41, 43);
+    cursor: pointer;
+}
+
+.warna {
+    color: orange;
+}
+
+@media (max-width: 480px) {
+    .input {
+        margin-top: 60px;
+        width: 80%;
+        height: 3rem;
+        border-radius: 10px;
+        font-size: 30px;
+        background-color: rgb(40, 41, 43);
+        color: white;
+    
+    }
+    
+    .table{
+        margin-top: 20px;
+        width: 90%;
+        height: 400px;
+        font-size: 30px;
+        border-collapse: separate; /* Pastikan border-spacing berfungsi */
+        border-spacing: 15px;
+    }
+    .judul {
+        margin-top: 80px;
+        text-align: center;
+        color: orange;
+        font-family: 'Courier New', Courier, monospace;
+    }
+}
+
+@media (max-width: 768px) {
+    .input {
+        margin-top: 60px;
+        width: 80%;
+        height: 3rem;
+        border-radius: 10px;
+        font-size: 30px;
+        background-color: rgb(40, 41, 43);
+    
+    }
+    
+    .table{
+        margin-top: 20px;
+        width: 90%;
+        height: 400px;
+        font-size: 30px;
+        border-collapse: separate; /* Pastikan border-spacing berfungsi */
+        border-spacing: 15px;
+    }
+}
+
+
+
