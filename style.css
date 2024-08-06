@@ -89,6 +89,14 @@ th:hover {
         color: orange;
         font-family: 'Courier New', Courier, monospace;
     }
+
+    th {
+        height: 3rem;
+        border-radius: 10px;
+        margin: 20px;
+        background-color: rgb(40, 41, 43);
+        cursor: none;
+    }
 }
 
 @media (max-width: 768px) {
@@ -109,6 +117,14 @@ th:hover {
         font-size: 30px;
         border-collapse: separate; /* Pastikan border-spacing berfungsi */
         border-spacing: 15px;
+    }
+
+    th {
+        height: 3rem;
+        border-radius: 10px;
+        margin: 20px;
+        background-color: rgb(40, 41, 43);
+        cursor: none;
     }
 }
 
