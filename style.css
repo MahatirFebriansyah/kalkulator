@@ -49,6 +49,14 @@ th {
     cursor: pointer;
 }
 
+th:focus {
+    outline: none;
+}
+
+th:hover {
+    background-color: rgb(39, 36, 36);
+}
+
 .warna {
     color: orange;
 }
