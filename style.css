@@ -44,7 +44,6 @@ th {
     border-radius: 10px;
     margin: 20px;
     background-color: rgb(40, 41, 43);
-    cursor: pointer;
 }
 
 th:focus {
@@ -89,14 +88,6 @@ th:hover {
         color: orange;
         font-family: 'Courier New', Courier, monospace;
     }
-
-    th {
-        height: 3rem;
-        border-radius: 10px;
-        margin: 20px;
-        background-color: rgb(40, 41, 43);
-        cursor: none;
-    }
 }
 
 @media (max-width: 768px) {
@@ -118,13 +109,15 @@ th:hover {
         border-collapse: separate; /* Pastikan border-spacing berfungsi */
         border-spacing: 15px;
     }
+}
 
+@media (min-width: 1024px) {
     th {
         height: 3rem;
         border-radius: 10px;
         margin: 20px;
         background-color: rgb(40, 41, 43);
-        cursor: none;
+        cursor: pointer;
     }
 }
 
