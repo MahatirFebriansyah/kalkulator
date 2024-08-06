@@ -53,6 +53,10 @@ th:focus {
     outline: none;
 }
 
+.table:focus {
+    outline: none;
+}
+
 th:hover {
     background-color: rgb(39, 36, 36);
 }
