@@ -27,7 +27,6 @@ body {
     font-size: 30px;
     background-color: rgb(40, 41, 43);
     color: white;
-    cursor: pointer;
 
 }
 
@@ -38,7 +37,6 @@ body {
     font-size: 30px;
     border-collapse: separate; /* Pastikan border-spacing berfungsi */
     border-spacing: 15px;
-    cursor: pointer;
 }
 
 th {
